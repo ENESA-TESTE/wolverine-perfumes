@@ -1313,11 +1313,21 @@ body {
         flex: 0.2;
     }
 }
-.match-img {
-    width: 60px;
-    height: 60px;
+.match-img-grife, .match-img-arab {
+    width: 70px;
+    height: 70px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 50%;
     margin: 10px auto;
-    border: 1px solid var(--gold);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    transition: var(--transition);
 }
+.match-img-arab {
+    border-color: var(--gold);
+}
+.match-card:hover .match-img-grife,
+.match-card:hover .match-img-arab {
+    transform: scale(1.1);
+}
+
