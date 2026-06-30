@@ -1196,7 +1196,7 @@ body {
     width: 100vw; height: 100vh;
     background-size: cover;
     background-position: center;
-    filter: blur(80px) brightness(0.25);
+    filter: blur(50px) brightness(0.65);
     z-index: -1;
     animation: ambientPulse 20s infinite alternate linear;
 }
