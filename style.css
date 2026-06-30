@@ -1130,3 +1130,60 @@ body {
         max-width: 350px;
     }
 }
+/* =====================================================
+   HERO SLIDESHOW & LOGO TWEAKS
+   ===================================================== */
+.logo-img {
+    height: 75px;
+    transition: var(--transition);
+}
+
+.hero-slideshow {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 0;
+}
+
+.hero-slideshow .slide {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    animation: heroSlideshow 25s infinite;
+    transform: scale(1.1);
+}
+
+.hero-slideshow .slide:nth-child(1) { animation-delay: 0s; }
+.hero-slideshow .slide:nth-child(2) { animation-delay: 5s; }
+.hero-slideshow .slide:nth-child(3) { animation-delay: 10s; }
+.hero-slideshow .slide:nth-child(4) { animation-delay: 15s; }
+.hero-slideshow .slide:nth-child(5) { animation-delay: 20s; }
+
+@keyframes heroSlideshow {
+    0% { opacity: 0; transform: scale(1.1); }
+    10% { opacity: 0.3; }
+    25% { opacity: 0.3; }
+    35% { opacity: 0; transform: scale(1.2); }
+    100% { opacity: 0; }
+}
+
+@media (max-width: 768px) {
+    .logo-img {
+        height: 55px; /* Adjust logo size for mobile */
+    }
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    .hero {
+        padding: 1rem;
+    }
+    .produto-card {
+        margin: 0 auto;
+    }
+    .produto-img-container {
+        height: 280px;
+    }
+}
