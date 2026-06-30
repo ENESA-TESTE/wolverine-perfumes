@@ -1164,8 +1164,8 @@ body {
 
 @keyframes heroSlideshow {
     0% { opacity: 0; transform: scale(1.1); }
-    10% { opacity: 0.3; }
-    25% { opacity: 0.3; }
+    10% { opacity: 0.7; }
+    25% { opacity: 0.7; }
     35% { opacity: 0; transform: scale(1.2); }
     100% { opacity: 0; }
 }
