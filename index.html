@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wolverine Perfumes | Fragrâncias Árabes de Luxo</title>
+    <meta name="description" content="Wolverine Perfumes - A maior seleção de perfumes árabes importados de luxo. Lattafa, Rasasi e mais. Entrega para todo o Brasil.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <span class="material-symbols-rounded">verified</span>
+        Perfumes Árabes Importados &nbsp;|&nbsp; 100% Originais &nbsp;|&nbsp; Entrega para todo o Brasil
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-left">
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+            <a href="#" class="logo">
+                <img src="img/logo.png" alt="Wolverine Perfumes" class="logo-img" style="height: 55px;">
+            </a>
+        </div>
+        <div class="nav-center">
+            <a href="#colecao" class="nav-link">Coleção</a>
+            <a href="#destaque" class="nav-link">Destaques</a>
+            <a href="#sobre" class="nav-link">Sobre</a>
+            <a href="#contato" class="nav-link">Contato</a>
+        </div>
+        <div class="nav-right">
+            <div class="search-toggle" id="search-toggle">
+                <span class="material-symbols-rounded">search</span>
+            </div>
+            <div class="cart-trigger" id="cart-trigger">
+                <span class="material-symbols-rounded">shopping_bag</span>
+                <span class="cart-badge" id="cart-badge">0</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="search-overlay">
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Buscar perfumes..." autocomplete="off">
+            <span class="material-symbols-rounded search-close" id="search-close">close</span>
+        </div>
+        <div class="search-results" id="search-results"></div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#colecao" class="mobile-link">Coleção</a>
+        <a href="#destaque" class="mobile-link">Destaques</a>
+        <a href="#sobre" class="mobile-link">Sobre</a>
+        <a href="#contato" class="mobile-link">Contato</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-particles"></div>
+        <div class="hero-content">
+            <p class="hero-subtitle">Exclusividade Oriental</p>
+            <h1 class="hero-title">A arte da <br><em>perfumaria árabe</em></h1>
+            <p class="hero-desc">Fragrâncias raras e envolventes, importadas diretamente do Oriente Médio para quem busca distinção e sofisticação.</p>
+            <div class="hero-actions">
+                <a href="#colecao" class="btn-hero">Explorar Coleção</a>
+                <a href="#destaque" class="btn-hero-outline">Ver Destaques</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span class="material-symbols-rounded">expand_more</span>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="trust-bar">
+        <div class="trust-item">
+            <span class="material-symbols-rounded">verified</span>
+            <span>100% Original</span>
+        </div>
+        <div class="trust-item">
+            <span class="material-symbols-rounded">local_shipping</span>
+            <span>Envio Rápido</span>
+        </div>
+        <div class="trust-item">
+            <span class="material-symbols-rounded">star</span>
+            <span>Qualidade Premium</span>
+        </div>
+        <div class="trust-item">
+            <span class="material-symbols-rounded">lock</span>
+            <span>Compra Segura</span>
+        </div>
+    </section>
+
+    <!-- Destaque (Featured Product) -->
+    <section class="featured" id="destaque">
+        <div class="featured-inner">
+            <div class="featured-image">
+                <img src="img/lattafa_musamam.jpg" alt="Lattafa Musamam Black Intense">
+            </div>
+            <div class="featured-info">
+                <span class="featured-badge">Destaque da Semana</span>
+                <h2>Lattafa Musamam <br>Black Intense</h2>
+                <p>Aroma enigmático e sedutor. Combinação poderosa de Oud, especiarias exóticas e couro. O perfume da serpente — para quem comanda a sala ao entrar.</p>
+                <div class="featured-price">
+                    <span class="price-old">R$ 599,90</span>
+                    <span class="price-current">R$ 429,90</span>
+                </div>
+                <button class="btn-featured" onclick="adicionarAoCarrinho(4)">
+                    <span class="material-symbols-rounded">shopping_bag</span>
+                    Adicionar à Sacola
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coleção (Products Grid) -->
+    <section class="colecao" id="colecao">
+        <div class="section-header">
+            <p class="section-sub">Nossa Seleção</p>
+            <h2 class="section-title">Coleção Exclusiva</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="filter-bar">
+            <button class="filter-btn active" data-filter="todos">Todos</button>
+            <button class="filter-btn" data-filter="Árabes">Árabes</button>
+            <button class="filter-btn" data-filter="Importados">Importados</button>
+        </div>
+        <div class="products-grid" id="produtos-grid"></div>
+    </section>
+
+    <!-- Sobre -->
+    <section class="about" id="sobre">
+        <div class="about-inner">
+            <div class="about-text">
+                <p class="section-sub">Nossa História</p>
+                <h2 class="section-title">Wolverine Perfumes</h2>
+                <div class="section-line left"></div>
+                <p>Nascemos da paixão pela arte olfativa árabe. Cada frasco em nossa coleção é selecionado a dedo, garantindo autenticidade e a mais alta qualidade.</p>
+                <p>Trabalhamos diretamente com as maiores casas de perfumaria do Oriente Médio — Lattafa, Rasasi e outras — para trazer ao Brasil fragrâncias que contam histórias milenares.</p>
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Clientes Satisfeitos</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Produtos Originais</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">24h</span>
+                        <span class="stat-label">Envio Expresso</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato / CTA -->
+    <section class="cta" id="contato">
+        <div class="cta-inner">
+            <h2>Ficou com alguma dúvida?</h2>
+            <p>Fale diretamente com nossa equipe pelo WhatsApp. Estamos prontos para te ajudar a encontrar a fragrância perfeita.</p>
+            <a href="https://wa.me/5511999999999" target="_blank" class="btn-whatsapp">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.555 4.126 1.527 5.864L.06 23.884l6.166-1.617A11.92 11.92 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.82c-1.93 0-3.76-.52-5.348-1.434l-.384-.228-3.973 1.042 1.06-3.873-.25-.397A9.793 9.793 0 012.18 12c0-5.422 4.398-9.82 9.82-9.82 5.422 0 9.82 4.398 9.82 9.82 0 5.422-4.398 9.82-9.82 9.82z"/></svg>
+                Falar no WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-col">
+                <img src="img/logo.png" alt="Wolverine Perfumes" class="footer-logo">
+                <p class="footer-tagline">A essência que te define.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navegação</h4>
+                <a href="#colecao">Coleção</a>
+                <a href="#destaque">Destaques</a>
+                <a href="#sobre">Sobre Nós</a>
+            </div>
+            <div class="footer-col">
+                <h4>Atendimento</h4>
+                <a href="#">Política de Troca</a>
+                <a href="#">Prazo de Entrega</a>
+                <a href="#">FAQ</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contato</h4>
+                <a href="mailto:contato@wolverineperfumes.com">contato@wolverineperfumes.com</a>
+                <a href="https://wa.me/5511999999999">(11) 99999-9999</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Wolverine Perfumes. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Sua Sacola</h3>
+            <span class="material-symbols-rounded cart-close" id="cart-close">close</span>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <div class="empty-cart" id="empty-cart">
+                <span class="material-symbols-rounded" style="font-size: 48px; opacity: 0.3;">shopping_bag</span>
+                <p>Sua sacola está vazia.</p>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-subtotal">
+                <span>Subtotal</span>
+                <span id="total-price">R$ 0,00</span>
+            </div>
+            <button class="btn-checkout" id="btn-checkout">
+                Finalizar pelo WhatsApp
+                <span class="material-symbols-rounded">arrow_forward</span>
+            </button>
+            <p class="cart-note">Envio e pagamento combinados via WhatsApp</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
