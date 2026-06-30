@@ -1313,3 +1313,11 @@ body {
         flex: 0.2;
     }
 }
+.match-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 10px auto;
+    border: 1px solid var(--gold);
+}
