@@ -16,6 +16,11 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
+    const ambientBg = document.getElementById('ambient-bg');
+    if (ambientBg) {
+        ambientBg.style.backgroundImage = `url('${produto.imagem}')`;
+    }
+
     // Render Product Details
     container.innerHTML = `
         <div class="produto-detalhes-wrapper">
